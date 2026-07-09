@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Booking — The Light Within You</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Parisienne&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo-lockup">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 6C17 8 13 14 13 20c0 6.6 5.4 12 12 12 3 0 5.7-1.1 7.8-2.9C29.6 30.6 26 26.7 26 22c0-5 3.3-9.2 7.8-10.7C31.8 8 28.1 6 24 6Z" stroke="#d4af6a" stroke-width="1.3" stroke-linejoin="round"/>
+        <circle cx="21" cy="19" r="1.4" fill="#c9a9e0"/>
+        <circle cx="27" cy="14" r="1" fill="#f5efe6"/>
+        <circle cx="30" cy="23" r="0.8" fill="#f5efe6"/>
+      </svg>
+      <span class="logo-word">The Light Within You</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:1rem;">
+    <div class="wrap">
+      <span class="script">Let's Connect</span>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.2rem);">Book your session</h1>
+      <p class="lede" style="margin:1.2rem auto 0;">
+        Available in person and online. Pick a time that works, or send a message if you have questions first.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:1rem;">
+    <div class="wrap">
+      <div class="grid grid-2" style="align-items:start;">
+
+        <!-- Booking calendar -->
+        <div class="card">
+          <h3 style="margin-top:0;">Choose a Time</h3>
+          <p style="margin-bottom:1.2rem;">Select an available slot below to book directly. You'll receive a confirmation by email.</p>
+
+          <!--
+            CALENDAR EMBED — replace the src below with your Calendly (or similar) link, e.g.:
+            https://calendly.com/your-username/reiki-session
+          -->
+          <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,106,0.3);min-height:480px;background:var(--bg-deep);display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;">
+            <div>
+              <p class="muted" style="margin-bottom:0.5rem;">Calendar will appear here once connected —</p>
+              <p class="muted" style="margin-bottom:1rem;">swap this block for your Calendly (or similar) embed code.</p>
+              <code style="color:var(--gold-soft);font-size:0.8rem;">&lt;!-- Calendly embed goes here --&gt;</code>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="card">
+          <h3 style="margin-top:0;">Or Send a Message</h3>
+          <form id="contact-form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="preference">Preferred Format</label>
+              <select id="preference" name="preference">
+                <option>In person</option>
+                <option>Online / distance</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="border:none;">Send Message</button>
+            <p id="form-status" class="muted" style="display:none;margin-top:1rem;margin-bottom:0;"></p>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="grid grid-2" style="margin-top:2.5rem;">
+        <div class="card">
+          <h3 style="margin-top:0;">In-Person Sessions</h3>
+          <p style="margin-bottom:0;">Held in a quiet, private studio space. Exact address shared upon booking.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0;">Online Sessions</h3>
+          <p style="margin-bottom:0;">Held over video or phone call — wherever you're able to find a quiet moment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span class="logo-word" style="font-size:1.3rem;">The Light Within You</span>
+    <nav class="footer-links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <span class="footer-note">&copy; 2026 The Light Within You. Sessions in-person &amp; online.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
