@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // --- glow orbs (dreamy light layer) ---
+  var orbsContainer = document.createElement('div');
+  orbsContainer.className = 'glow-orbs';
+  orbsContainer.setAttribute('aria-hidden', 'true');
+  orbsContainer.innerHTML =
+    '<div class="glow-orb violet"></div>' +
+    '<div class="glow-orb gold"></div>' +
+    '<div class="glow-orb rose"></div>' +
+    '<div class="glow-orb lavender"></div>';
+  document.body.insertBefore(orbsContainer, document.body.firstChild);
+
   // --- starfield ---
   var starsContainer = document.createElement('div');
   starsContainer.className = 'stars-bg';
