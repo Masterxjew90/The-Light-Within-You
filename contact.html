@@ -54,16 +54,22 @@
           <p style="margin-bottom:1.2rem;">Select an available slot below to book directly. You'll receive a confirmation by email.</p>
 
           <!--
-            CALENDAR EMBED — replace the src below with your Calendly (or similar) link, e.g.:
-            https://calendly.com/your-username/reiki-session
+            CALENDLY EMBED
+            1. Create a free account at https://calendly.com and set up your event type
+               (e.g. "Reiki Session").
+            2. Copy your scheduling link, e.g. https://calendly.com/your-username/reiki-session
+            3. Paste it into data-url below, replacing the placeholder link.
+               The color params at the end (background_color, text_color, primary_color)
+               keep the embed matched to this site's palette — leave those as they are.
           -->
-          <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,106,0.3);min-height:480px;background:var(--bg-deep);display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;">
-            <div>
-              <p class="muted" style="margin-bottom:0.5rem;">Calendar will appear here once connected —</p>
-              <p class="muted" style="margin-bottom:1rem;">swap this block for your Calendly (or similar) embed code.</p>
-              <code style="color:var(--gold-soft);font-size:0.8rem;">&lt;!-- Calendly embed goes here --&gt;</code>
-            </div>
+          <div class="calendly-inline-widget"
+               data-url="https://calendly.com/masterxjew90/30min?background_color=1b1035&text_color=f5efe6&primary_color=d4af6a"
+               style="min-width:280px;height:580px;border-radius:12px;overflow:hidden;border:1px solid rgba(212,175,106,0.3);">
           </div>
+          <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <p class="muted" style="font-size:0.8rem;margin-top:0.8rem;">
+            Calendar not showing? Replace the placeholder link in this page's code with your own Calendly scheduling link.
+          </p>
         </div>
 
         <!-- Contact form -->
